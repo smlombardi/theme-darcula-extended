@@ -33,7 +33,7 @@
 				<key>caret</key>
 				<string>#bbbbbb</string>
 				<key>foreground</key>
-				<string>#A9B7C6</string>
+				<string>#DFE2E5</string>
 				<key>invisibles</key>
 				<string>#3B3A32</string>
 				<key>lineHighlight</key>
@@ -61,7 +61,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#AB6767</string>
+				<string>#CC7832</string>
 			</dict>
 		</dict>
 		<dict>
@@ -132,7 +132,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#FFC66D</string>
+				<string>#ffc765</string>
 			</dict>
 		</dict>
 
@@ -156,7 +156,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#C7AF3F</string>
+				<string>#6897BB</string>
 			</dict>
 		</dict>
 
@@ -168,7 +168,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#9FB3C2</string>
+				<string>#ce7827</string>
 			</dict>
 		</dict>
 
@@ -268,7 +268,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#97AC92</string>
+				<string>#a9b7c7</string>
 			</dict>
 		</dict>		
 		<dict>
@@ -290,7 +290,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#C09F6F</string>
+				<string>#9975ab</string>
 			</dict>
 		</dict>
 		<dict>
@@ -302,7 +302,29 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#AA95B7</string>
+				<string>#9975ab</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Function Storage Block</string>
+			<key>scope</key>
+			<string>meta.js.function.storage.type.block</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ce7827</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Function Storage Block</string>
+			<key>scope</key>
+			<string>meta.js.function.block.variable.property.support.dom</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#9975ab</string>
 			</dict>
 		</dict>
 
@@ -1025,7 +1047,7 @@
 			<key>name</key>
 			<string>Punctuation</string>
 			<key>scope</key>
-			<string>punctuation.definition.string, punctuation.definition.variable, punctuation.definition.string, punctuation.definition.parameters, punctuation.definition.string, punctuation.definition.array, punctuation.separator.key-value, support.constant.mathematical-symbols.scss, support.constant.mathematical-symbols.css, punctuation.section.function,meta.tag.block.any.html.punctuation.definition.begin.string.quoted.double,meta.tag.block.any.html.punctuation.definition.end.string.quoted.double,meta.tag.any.html.punctuation.definition.begin.string.quoted.double.inline,meta.tag.any.html.punctuation.definition.end.string.quoted.double.inline,meta.tag.any.html.punctuation.definition.begin.string.quoted double,meta.tag.any.html.punctuation.definition.end.string.quoted double,ts.block.punctuation,ts.block.brace.array.literal.square,ts.brace.type.square,ts.brace.array.literal.square,ts.punctuation.terminator,ts.punctuation.decorator.objectliteral.object.member.accessor,ts.punctuation.separator.comma.decorator.objectliteral,ts.block.brace.round,scss.meta.at-rule.property-list.media,scss.meta.set.variable.keyword.operator.css,meta.tag.any.html.punctuation.string.quoted.double.embedded.line.php.source.inline.terminator.expression,meta.tag.any.html.string.quoted.double.embedded.line.php.source.inline, meta.punctuation.begin.embedded.line.php.section.source.scope, meta.punctuation.end.embedded.line.php.section.source.scope, entity.scss.meta.property-list.punctuation.other.attribute-name.css.definition.pseudo-class</string>
+			<string>punctuation.definition.string, punctuation.definition.variable, punctuation.definition.string, punctuation.definition.parameters, punctuation.definition.string, punctuation.definition.array, punctuation.separator.key-value, support.constant.mathematical-symbols.scss, support.constant.mathematical-symbols.css, punctuation.section.function,meta.tag.block.any.html.punctuation.definition.begin.string.quoted.double,meta.tag.block.any.html.punctuation.definition.end.string.quoted.double,meta.tag.any.html.punctuation.definition.begin.string.quoted.double.inline,meta.tag.any.html.punctuation.definition.end.string.quoted.double.inline,meta.tag.any.html.punctuation.definition.begin.string.quoted double,meta.tag.any.html.punctuation.definition.end.string.quoted double,ts.block.punctuation,ts.block.brace.array.literal.square,ts.brace.type.square,ts.brace.array.literal.square,ts.punctuation.terminator,ts.punctuation.decorator.objectliteral.object.member.accessor,ts.punctuation.separator.comma.decorator.objectliteral,ts.block.brace.round,scss.meta.at-rule.property-list.media,scss.meta.set.variable.keyword.operator.css,meta.tag.any.html.punctuation.string.quoted.double.embedded.line.php.source.inline.terminator.expression,meta.tag.any.html.string.quoted.double.embedded.line.php.source.inline, meta.punctuation.begin.embedded.line.php.section.source.scope, meta.punctuation.end.embedded.line.php.section.source.scope, entity.scss.meta.property-list.punctuation.other.attribute-name.css.definition.pseudo-class, meta.js.function.punctuation.block.object.separator.array.literal.objectliteral.member.object-literal.key.key-value, meta.js.function.punctuation.definition.block, meta.brace.js.function.block.object.array.literal.square.objectliteral.member, meta.brace.js.function.block.array.literal.square</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
