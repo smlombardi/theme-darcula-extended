@@ -1,0 +1,27 @@
+{
+    "name": "darcula-extended",
+    "displayName": "Darcula Extended Theme",
+    "description": "A syntax theme for VSCode based on Darcula theme from Jetbrains IDEs",
+    "version": "1.0.0",
+    "publisher": "smlombardi",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/rokoroku/vscode-theme-darcula"
+    },
+    "engines": {
+        "vscode": "*"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "icon": "icon.svg",
+    "contributes": {
+        "themes": [
+            {
+                "label": "Darcula Extended",
+                "uiTheme": "vs-dark",
+                "path": "./themes/DarculaExtended.tmTheme"
+            }
+        ]
+    }
+}
