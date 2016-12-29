@@ -757,17 +757,6 @@
 				<string>#6D9CBE</string>
 			</dict>
 		</dict>
-        <dict>
-			<key>name</key>
-			<string>Sass Comment</string>
-			<key>scope</key>
-			<string>scss.punctuation.definition.comment, scss.comment</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#BC9455</string>
-			</dict>
-		</dict>
 
 
 
