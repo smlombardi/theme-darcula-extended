@@ -79,7 +79,7 @@
 			<key>name</key>
 			<string>Comments</string>
 			<key>scope</key>
-			<string>comment, punctuation.definition.comment,ts.block.class.method.declaration.comment.line.double-slash, ts.punctuation.definition.decorator.objectliteral.object.member.array.literal.comment.line.double-slash</string>
+			<string>comment, punctuation.definition.comment,ts.block.class.method.declaration.comment.line.double-slash, ts.punctuation.definition.decorator.objectliteral.object.member.array.literal.comment.line.double-slash, ts.class.comment.line.double-slash</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
