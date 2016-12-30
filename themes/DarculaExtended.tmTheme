@@ -333,24 +333,25 @@
 			<key>name</key>
 			<string>variable</string>
 			<key>scope</key>
-			<string>meta.ts.variable.class.declaration.method.parameters.parameter,ts.decorator.objectliteral.object.member.object-literal.key, ts.variable.object.class.field.declaration.property,ts.objectliteral.object.member.object-literal.key.array.literal.var.expr</string>
+			<string>meta.ts.variable.class.declaration.method.parameters.parameter,ts.decorator.objectliteral.object.member.object-literal.key, ts.variable.object.class.field.declaration.property,ts.objectliteral.object.member.object-literal.key.array.literal.var.expr,ts.block.variable.other.readwrite.class.declaration.method.arrow.var.expr.object-binding-pattern-variable</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#aa95b7</string>
+				<string>#9975ab</string>
 			</dict>
 		</dict>		
-		<dict>
-			<key>name</key>
-			<string>ts keyword control</string>
-			<key>scope</key>
-			<string>ts.keyword.control.class.export</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#bf7a75</string>
-			</dict>
-		</dict>
+        <dict>
+            <key>name</key>
+            <string>ts keyword control</string>
+            <key>scope</key>
+            <string>ts.keyword.control.class.export</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#ce7827</string>
+            </dict>
+        </dict>
+
 		<dict>
 			<key>name</key>
 			<string>ts entity name type</string>
@@ -359,7 +360,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#9CB571</string>
+				<string>#a9b7c7</string>
 			</dict>
 		</dict>
 		<dict>
@@ -370,7 +371,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#957690</string>
+				<string>#9975ab</string>
 			</dict>
 		</dict>
 		<dict>
@@ -381,7 +382,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#66c4d9</string>
+				<string>#a9b7c7</string>
 			</dict>
 		</dict>
 		<dict>
@@ -397,62 +398,104 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>this</string>
+			<string>ts block variable</string>
 			<key>scope</key>
 			<string>ts.block.variable.class.declaration.method.language.this</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#969469</string>
+				<string>#ce7827</string>
 			</dict>
 		</dict>
+        <dict>
+            <key>name</key>
+            <string>class</string>
+            <key>scope</key>
+            <string>ts.block.variable.other.object.class.declaration.property.method,ts.block.variable.other.object.class.declaration.method,ts.block.variable.other.object.array.literal.class.declaration.method.var.expr,ts.block.variable.class.declaration.method.parameter.arrow,ts.block.variable.other.class.declaration.property.method</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#a9b7c7</string>
+            </dict>
+        </dict>
 		<dict>
 			<key>name</key>
-			<string>this</string>
+			<string>class</string>
 			<key>scope</key>
-			<string>ts.block.variable.other.object.class.declaration.property.method,ts.block.variable.other.object.class.declaration.method,ts.block.variable.other.object.array.literal.class.declaration.method.var.expr,ts.block.variable.class.declaration.method.parameter.arrow,ts.block.variable.other.class.declaration.property.method</string>
+			<string>ts.block.variable.other.object.class.declaration.method,ts.block.variable.other.object.array.literal.class.declaration.method.var.expr,ts.block.variable.class.declaration.method.parameter.arrow,ts.block.variable.other.class.declaration.property.method</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#ba9e6d</string>
+				<string>#9975ab</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>this</string>
+			<string>class numeric</string>
 			<key>scope</key>
 			<string>ts.block.class.declaration.method.constant.numeric.decimal</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#d0c29d</string>
+				<string>#6696bd</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
 			<string>return</string>
 			<key>scope</key>
-			<string>ts.entity.name.class.type.method.declaration.parameters.return,ts.punctuation.definition.begin.class.type.method.declaration.parameters.return.typeparameters,ts.punctuation.definition.end.class.type.method.declaration.parameters.return.typeparameters,ts.block.entity.name.class.type.method.declaration.parameters.new.expr,ts.block.punctuation.definition.begin.class.type.method.declaration.parameters.typeparameters.new.expr,ts.block.punctuation.definition.end.class.type.method.declaration.parameters.typeparameters.new.expr</string>
+			<string>ts.entity.name.class.type.method.declaration.parameters.return, ts.punctuation.definition.begin.class.type.method.declaration.parameters.return.typeparameters, ts.punctuation.definition.end.class.type.method.declaration.parameters.return.typeparameters, ts.block.entity.name.class.type.method.declaration.parameters.new.expr, ts.block.punctuation.definition.begin.class.type.method.declaration.parameters.typeparameters.new.expr, ts.block.punctuation.definition.end.class.type.method.declaration.parameters.typeparameters.new.expr, ts.block.objectliteral.object.member.object-literal.key.class.declaration.method</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#b57b91</string>
+				<string>#9975ab</string>
 			</dict>
 		</dict>
-		<dict>
-			<key>name</key>
-			<string>control flow</string>
-			<key>scope</key>
-			<string>ts.keyword.control.block.class.method.declaration.flow</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#a0b3c1</string>
-			</dict>
-		</dict>
-
-
-	
+        <dict>
+            <key>name</key>
+            <string>control flow</string>
+            <key>scope</key>
+            <string>ts.keyword.control.block.class.method.declaration.flow</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#a0b3c1</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>ts string</string>
+            <key>scope</key>
+            <string>ts.string.quoted.single.class.field.declaration</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#698857</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>ts string</string>
+            <key>scope</key>
+            <string>ts.block.objectliteral.object.member.class.declaration.method.language.constant.boolean</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#e1a170</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>ts string</string>
+            <key>scope</key>
+            <string>ts.block.variable.class.declaration.method.parameter.arrow</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#a9b7c7</string>
+            </dict>
+        </dict>
+   
 
 
 		<!-- html -->
