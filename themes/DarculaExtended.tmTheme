@@ -79,7 +79,7 @@
 			<key>name</key>
 			<string>Comments</string>
 			<key>scope</key>
-			<string>comment, punctuation.definition.comment,ts.block.class.method.declaration.comment.line.double-slash, ts.punctuation.definition.decorator.objectliteral.object.member.array.literal.comment.line.double-slash, ts.class.comment.line.double-slash, js.function.punctuation.definition.block.object.objectliteral.member.comment.line.double-slash, meta.js.function.punctuation.definition.block.comment.line.double-slash</string>
+			<string>comment, punctuation.definition.comment,ts.block.class.method.declaration.comment.line.double-slash, ts.punctuation.definition.decorator.objectliteral.object.member.array.literal.comment.line.double-slash, ts.class.comment.line.double-slash, js.function.punctuation.definition.block.object.objectliteral.member.comment.line.double-slash, meta.js.function.punctuation.definition.block.comment.line.double-slash, comment.block.html</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -503,7 +503,7 @@
 			<key>name</key>
 			<string>Tags</string>
 			<key>scope</key>
-			<string>entity.name.tag, punctuation.definition.tag, keyword.control.html.elements</string>
+			<string>entity.name.tag, punctuation.definition.tag, keyword.control.html.elements, entity.name.tag.inline.any.html, entity.name.tag.block.any.html</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -514,7 +514,7 @@
 			<key>name</key>
 			<string>Attributes</string>
 			<key>scope</key>
-			<string>meta.tag.any.html.entity.other.attribute-name, meta.tag.html.entity.other.attribute-name, meta.tag.xml.entity.localname.other.attribute-name, meta.tag.xml.entity.other.attribute-name.namespace, html.entity.other.attribute-name.source.js.embedded</string>
+			<string>meta.tag.any.html.entity.other.attribute-name, meta.tag.html.entity.other.attribute-name, meta.tag.xml.entity.localname.other.attribute-name, meta.tag.xml.entity.other.attribute-name.namespace, html.entity.other.attribute-name.source.js.embedded, entity.other.attribute-name.html</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -525,7 +525,7 @@
 			<key>name</key>
 			<string>Attribute Values</string>
 			<key>scope</key>
-			<string>meta.tag.any.html.string.quoted.double, html.string.quoted.double.source.js.embedded.detected-link, meta.tag.html.other.string.quoted.double</string>
+			<string>string.quoted.double.html</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
