@@ -561,7 +561,7 @@
 			<key>name</key>
 			<string>CSS Class Selector Punctuation</string>
 			<key>scope</key>
-			<string>entity.scss.meta.property-list.punctuation.other.attribute-name.class.css.definition,entity.punctuation.other.attribute-name.class.css.definition</string>
+			<string>entity.scss.meta.property-list.punctuation.other.attribute-name.class.css.definition, entity.punctuation.other.attribute-name.class.css.definition, punctuation.definition.entity.css</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -594,7 +594,7 @@
 			<key>name</key>
 			<string>CSS property value</string>
 			<key>scope</key>
-			<string>meta.property-group support.constant.property-value.css, meta.property-list.css meta.property-value.css, meta.property-value support.constant.property-value.css, meta.property-group support.constant.property-value.scss, meta.property-group support.constant.property-value.sass, meta.property-value support.constant.property-value.scss, meta.property-value support.constant.property-value.sass, constant.numeric.css, constant.numeric.scss, constant.numeric.sass, .variable.parameter.misc.css, parameter.less.data-uri comment markup.raw, source.less meta.property-value.css,scss.meta.set.variable.constant.support.font-name</string>
+			<string>meta.property-group support.constant.property-value.css, meta.property-list.css meta.property-value.css, meta.property-value support.constant.property-value.css, meta.property-group support.constant.property-value.scss, meta.property-group support.constant.property-value.sass, meta.property-value support.constant.property-value.scss, meta.property-value support.constant.property-value.sass, constant.numeric.css, constant.numeric.scss, constant.numeric.sass, .variable.parameter.misc.css, parameter.less.data-uri comment markup.raw, source.less meta.property-value.css,scss.meta.set.variable.constant.support.font-name, meta.property-value.scss</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -606,7 +606,7 @@
             <key>name</key>
             <string>CSS colors</string>
             <key>scope</key>
-            <string>support.constant.named-color, meta.property-value constant, keyword.other.unit, constant.other.color.rgb-value, constant.other.rgb-value.css, constant.other.color</string>
+            <string>support.constant.named-color, meta.property-value constant, keyword.other.unit, constant.other.color.rgb-value, constant.other.rgb-value.css, constant.other.color, constant.numeric.color.hex-value.scss</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
@@ -660,9 +660,9 @@
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string>bold</string>
+				<string></string>
 				<key>foreground</key>
-				<string>#CC7832</string>
+				<string>#CC3232</string>
 			</dict>
 		</dict>
 
@@ -681,7 +681,7 @@
 			<key>name</key>
 			<string>CSS @media attribute</string>
 			<key>scope</key>
-			<string>meta.at-rule.css.property-name.support.type.media,meta.support.css.at-rule.media.constant</string>
+			<string>keyword.control.at-rule.media.scss</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -692,7 +692,7 @@
             <key>name</key>
             <string>CSS Numbers</string>
             <key>scope</key>
-            <string>meta.at-rule.constant.numeric.media, meta.property-list.property-value.constant.numeric,scss.meta.property-list.at-rule.media,property-list.scss.constant.numeric.variable.set,meta.scss.set.variable.constant.numeric.map,scss.meta.set.variable.constant.numeric,scss.meta.at-rule.property-list.constant.numeric.media</string>
+            <string>meta.at-rule.constant.numeric.media, meta.property-list.property-value.constant.numeric,scss.meta.property-list.at-rule.media,property-list.scss.constant.numeric.variable.set,meta.scss.set.variable.constant.numeric.map,scss.meta.set.variable.constant.numeric,scss.meta.at-rule.property-list.constant.numeric.media, constant.numeric.scss</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
@@ -703,7 +703,7 @@
             <key>name</key>
             <string>CSS units</string>
             <key>scope</key>
-            <string>meta.keyword.other.property-list.property-value.unit, meta.at-rule.keyword.other.unit.media,property-list.scss.set.variable.keyword.unit,other.meta.scss.set.variable.keyword.unit.map,scss.meta.set.variable.keyword.other.unit,scss.meta.at-rule.keyword.property-list.other.unit.media, meta.scss.keyword.other.unit.property-list.property-value</string>
+            <string>meta.keyword.other.property-list.property-value.unit, meta.at-rule.keyword.other.unit.media,property-list.scss.set.variable.keyword.unit,other.meta.scss.set.variable.keyword.unit.map, scss.meta.set.variable.keyword.other.unit, scss.meta.at-rule.keyword.property-list.other.unit.media, meta.scss.keyword.other.unit.property-list.property-value, keyword.other.unit.scss, keyword.other.unit.css, keyword.other.unit.scss</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
@@ -725,7 +725,7 @@
 			<key>name</key>
 			<string>CSS @import</string>
 			<key>scope</key>
-			<string>meta.scss.keyword.at-rule.import</string>
+			<string>keyword.control.at-rule.import.scss</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -745,24 +745,35 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>SCSS Pseudo</string>
+			<string>CSS Pseudo</string>
 			<key>scope</key>
-			<string>entity.property-list.other.attribute-name.pseudo-element.css,entity.other.attribute-name.property-list.css.pseudo-class,entity.other.attribute-name.css.pseudo-class</string>
+			<string>entity.property-list.other.attribute-name.pseudo-element.css,entity.other.attribute-name.property-list.css.pseudo-class,entity.other.attribute-name.css.pseudo-class, entity.other.attribute-name.pseudo-class.css, entity.other.attribute-name.pseudo-element.css</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#E8BF6A</string>
+				<string>#AB6767</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
 			<string>SCSS Attribute selector</string>
 			<key>scope</key>
-			<string>meta.scss.entity.property-list.other.attribute-name.attribute-selector.attribute</string>
+			<string>entity.other.attribute-name.attribute.scss</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#E8BF6A</string>
+				<string>#AB6767</string>
+			</dict>
+		</dict>		
+		<dict>
+			<key>name</key>
+			<string>SCSS Attribute Value</string>
+			<key>scope</key>
+			<string>string.quoted.double.attribute-value.scss</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#6A8759</string>
 			</dict>
 		</dict>
 
@@ -770,7 +781,7 @@
             <key>name</key>
             <string>SCSS Function</string>
             <key>scope</key>
-            <string>meta.scss.function.property-list.support.property-value.misc,scss.meta.keyword.at-rule.control.function,scss.meta.set.variable.support.function.misc</string>
+            <string>support.function.misc.scss, keyword.control.at-rule.function.scss</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
@@ -781,7 +792,7 @@
             <key>name</key>
             <string>SCSS Mixin</string>
             <key>scope</key>
-            <string>scss.meta.at-rule.mixin.keyword.control</string>
+            <string>keyword.control.at-rule.mixin.scss</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
@@ -793,11 +804,23 @@
 			<key>name</key>
 			<string>Sass Variable</string>
 			<key>scope</key>
-			<string>source.scss meta.set.variable variable, variable.scss,meta.property-list.scss.variable.at-rule.media</string>
+			<string>source.scss meta.set.variable variable, variable.scss,meta.property-list.scss.variable.at-rule.media, variable.scss</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
 				<string>#6D9CBE</string>
+			</dict>
+		</dict>
+
+		<dict>
+			<key>name</key>
+			<string>Sass Interpolation</string>
+			<key>scope</key>
+			<string>punctuation.definition.interpolation.begin.bracket.curly.scss, punctuation.definition.interpolation.end.bracket.curly.scss</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#A5C261</string>
 			</dict>
 		</dict>
 
