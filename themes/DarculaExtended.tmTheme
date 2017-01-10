@@ -57,7 +57,7 @@
 			<key>name</key>
 			<string>Boolean</string>
 			<key>scope</key>
-			<string>meta.js.function.block.object.language.objectliteral.member.constant.boolean, js.meta.function.constant.language.boolean</string>
+			<string>constant.language.boolean.true.js, constant.language.boolean.false.js, constant.language.null.js</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -225,7 +225,7 @@
 			<key>name</key>
 			<string>Strings, Inherited Class</string>
 			<key>scope</key>
-			<string>string, constant.other.symbol, entity.other.inherited-class, constant.character.escape, constant.character.escape.scss, constant.character.escape.css,invalid.illegal.bad-ampersand.html,ts.block.string.quoted.single,scss.meta.set.variable.string.quoted.single,meta.string.quoted.embedded.line.php.source.single.string-contents,meta.tag.any.html.string.quoted.double.embedded.line.php.source.single.string-contents.inline</string>
+			<string>string, constant.other.symbol, entity.other.inherited-class, constant.character.escape, constant.character.escape.scss, constant.character.escape.css,invalid.illegal.bad-ampersand.html,ts.block.string.quoted.single,scss.meta.set.variable.string.quoted.single,meta.string.quoted.embedded.line.php.source.single.string-contents,meta.tag.any.html.string.quoted.double.embedded.line.php.source.single.string-contents.inline, string.quoted.single.js</string>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
@@ -264,7 +264,7 @@
 			<key>name</key>
 			<string>_this</string>
 			<key>scope</key>
-			<string>meta.js.function.block.variable.other.object</string>
+			<string>meta.js.function.block.variable.other.object, variable.other.readwrite.js, variable.other.object.js</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -286,7 +286,7 @@
 			<key>name</key>
 			<string>Variable Object Property</string>
 			<key>scope</key>
-			<string>meta.js.function.block.variable.other.object.property</string>
+			<string>variable.parameter.js, variable.other.object.property.js</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -297,7 +297,7 @@
 			<key>name</key>
 			<string>Variable Object Property</string>
 			<key>scope</key>
-			<string>meta.js.function.block.object.objectliteral.member.object-literal.key.array.literal,meta.js.function.block.object.var.expr.objectliteral.member.object-literal.key,meta.js.function.block.object.objectliteral.member.object-literal.key
+			<string>meta.js.function.block.object.objectliteral.member.object-literal.key.array.literal,meta.js.function.block.object.var.expr.objectliteral.member.object-literal.key,meta.js.function.block.object.objectliteral.member.object-literal.key, variable.other.property.js
 			</string>
 			<key>settings</key>
 			<dict>
@@ -309,7 +309,7 @@
 			<key>name</key>
 			<string>Function Storage Block</string>
 			<key>scope</key>
-			<string>meta.js.function.storage.type.block</string>
+			<string>meta.js.function.storage.type.block, function.storage.type.block.js</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
