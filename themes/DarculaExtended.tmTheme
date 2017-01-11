@@ -78,7 +78,7 @@
                 <key>name</key>
                 <string>Comments</string>
                 <key>scope</key>
-                <string>comment, punctuation.definition.comment,ts.block.class.method.declaration.comment.line.double-slash, ts.punctuation.definition.decorator.objectliteral.object.member.array.literal.comment.line.double-slash, ts.class.comment.line.double-slash, js.function.punctuation.definition.block.object.objectliteral.member.comment.line.double-slash, meta.js.function.punctuation.definition.block.comment.line.double-slash, comment.block.html</string>
+                <string>comment, punctuation.definition.comment, ts.block.class.method.declaration.comment.line.double-slash, ts.punctuation.definition.decorator.objectliteral.object.member.array.literal.comment.line.double-slash, ts.class.comment.line.double-slash, js.function.punctuation.definition.block.object.objectliteral.member.comment.line.double-slash, meta.js.function.punctuation.definition.block.comment.line.double-slash, comment.block.html</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
@@ -212,7 +212,9 @@
                 <key>name</key>
                 <string>Strings, Inherited Class</string>
                 <key>scope</key>
-                <string>string, constant.other.symbol, entity.other.inherited-class, constant.character.escape, constant.character.escape.scss, constant.character.escape.css, invalid.illegal.bad-ampersand.html, ts.block.string.quoted.single, scss.meta.set.variable.string.quoted.single, meta.string.quoted.embedded.line.php.source.single.string-contents, string.quoted.single.js, string.quoted.double.json</string>
+                <string>
+                    string, constant.other.symbol, entity.other.inherited-class, constant.character.escape, constant.character.escape.scss, constant.character.escape.css, invalid.illegal.bad-ampersand.html, ts.block.string.quoted.single, scss.meta.set.variable.string.quoted.single, meta.string.quoted.embedded.line.php.source.single.string-contents, string.quoted.single.js, string.quoted.double.json, string.quoted.single.scss, string.quoted.single.css
+                </string>
                 <key>settings</key>
                 <dict>
                     <key>background</key>
@@ -293,7 +295,7 @@
                 <key>name</key>
                 <string>Variable Object Property</string>
                 <key>scope</key>
-                <string>variable.other.property.js, variable.other.object.property.js</string>
+                <string>variable.other.property, variable.other.object.property</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
@@ -304,7 +306,7 @@
                 <key>name</key>
                 <string>Literal Key</string>
                 <key>scope</key>
-                <string>meta.object-literal.key.js
+                <string>meta.object-literal.key, meta.object.member.object-literal.key
                 </string>
                 <key>settings</key>
                 <dict>
@@ -336,22 +338,12 @@
             </dict>
 
             <!-- typescript -->
-            <dict>
-                <key>name</key>
-                <string>variable</string>
-                <key>scope</key>
-                <string>meta.ts.variable.class.declaration.method.parameters.parameter,ts.decorator.objectliteral.object.member.object-literal.key, ts.variable.object.class.field.declaration.property,ts.objectliteral.object.member.object-literal.key.array.literal.var.expr,ts.block.variable.other.readwrite.class.declaration.method.arrow.var.expr.object-binding-pattern-variable</string>
-                <key>settings</key>
-                <dict>
-                    <key>foreground</key>
-                    <string>#9975ab</string>
-                </dict>
-            </dict>
+          
             <dict>
                 <key>name</key>
                 <string>ts keyword control</string>
                 <key>scope</key>
-                <string>ts.keyword.control.class.export</string>
+                <string>keyword.control.export.ts</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
@@ -362,7 +354,7 @@
                 <key>name</key>
                 <string>ts entity name type</string>
                 <key>scope</key>
-                <string>ts.entity.name.type.class</string>
+                <string>entity.name.type.class.ts</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
@@ -373,7 +365,7 @@
                 <key>name</key>
                 <string>ts storage modifier</string>
                 <key>scope</key>
-                <string>ts.class.storage.modifier</string>
+                <string>class.storage.modifier.ts</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
@@ -384,7 +376,7 @@
                 <key>name</key>
                 <string>ts decorator</string>
                 <key>scope</key>
-                <string>ts.decorator.entity.name.function, ts.punctuation.decorator</string>
+                <string>entity.name.function.ts, punctuation.decorator.ts</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
@@ -395,7 +387,7 @@
                 <key>name</key>
                 <string>ts return</string>
                 <key>scope</key>
-                <string>ts.support.type.class.declaration.method.return.primitive,ts.type.annotation.support.class.declaration.method.parameters.primitive</string>
+                <string>support.type.class.declaration.method.return.primitive.ts, type.annotation.support.class.declaration.method.parameters.primitive.ts</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
@@ -406,7 +398,7 @@
                 <key>name</key>
                 <string>ts block variable</string>
                 <key>scope</key>
-                <string>ts.block.variable.class.declaration.method.language.this</string>
+                <string>block.variable.class.declaration.method.language.this.ts</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
@@ -417,7 +409,12 @@
                 <key>name</key>
                 <string>class</string>
                 <key>scope</key>
-                <string>ts.block.variable.other.object.class.declaration.property.method,ts.block.variable.other.object.class.declaration.method,ts.block.variable.other.object.array.literal.class.declaration.method.var.expr,ts.block.variable.class.declaration.method.parameter.arrow,ts.block.variable.other.class.declaration.property.method</string>
+                <string>
+                    block.variable.other.object.class.declaration.property.method.ts, 
+                    block.variable.other.object.class.declaration.method.ts, 
+                    block.variable.other.object.array.literal.class.declaration.method.var.expr.ts, 
+                    block.variable.class.declaration.method.parameter.arrow, ts.block.variable.other.class.declaration.property.method.ts
+                </string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
@@ -428,7 +425,12 @@
                 <key>name</key>
                 <string>class</string>
                 <key>scope</key>
-                <string>ts.block.variable.other.object.class.declaration.method,ts.block.variable.other.object.array.literal.class.declaration.method.var.expr,ts.block.variable.class.declaration.method.parameter.arrow,ts.block.variable.other.class.declaration.property.method</string>
+                <string>
+                    block.variable.other.object.class.declaration.method.ts,
+                    block.variable.other.object.array.literal.class.declaration.method.var.expr.ts
+                    block.variable.class.declaration.method.parameter.arrow.ts,
+                    block.variable.other.class.declaration.property.method.ts
+                </string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
@@ -501,6 +503,8 @@
                     <string>#a9b7c7</string>
                 </dict>
             </dict>
+
+
             <!-- html -->
             <dict>
                 <key>name</key>
@@ -528,7 +532,7 @@
                 <key>name</key>
                 <string>Attribute Values</string>
                 <key>scope</key>
-                <string>string.quoted.double.html</string>
+                <string>string.quoted.double.html, meta.template string.quoted.double</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
@@ -539,7 +543,7 @@
                 <key>name</key>
                 <string>Attribute IDs</string>
                 <key>scope</key>
-                <string>entity.other.attribute-name.id, punctuation.definition.entity</string>
+                <string>entity.other.attribute-name.id</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
@@ -596,7 +600,7 @@
                 <key>name</key>
                 <string>CSS property value</string>
                 <key>scope</key>
-                <string>meta.property-group support.constant.property-value.css, meta.property-list.css meta.property-value.css, meta.property-value support.constant.property-value.css, meta.property-group support.constant.property-value.scss, meta.property-group support.constant.property-value.sass, meta.property-value support.constant.property-value.scss, meta.property-value support.constant.property-value.sass, constant.numeric.css, constant.numeric.scss, constant.numeric.sass, .variable.parameter.misc.css, parameter.less.data-uri comment markup.raw, source.less meta.property-value.css,scss.meta.set.variable.constant.support.font-name, meta.property-value.scss</string>
+                <string>meta.property-group support.constant.property-value.css, meta.property-list.css meta.property-value.css, meta.property-value support.constant.property-value.css, meta.property-group support.constant.property-value.scss, meta.property-group support.constant.property-value.sass, meta.property-value support.constant.property-value.scss, meta.property-value support.constant.property-value.sass, constant.numeric.css, constant.numeric.scss, constant.numeric.sass, .variable.parameter.misc.css, parameter.less.data-uri comment markup.raw, source.less meta.property-value.css, scss.meta.set.variable.constant.support.font-name, meta.property-value.scss</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
@@ -629,7 +633,7 @@
                 <key>name</key>
                 <string>Sass Placeholder</string>
                 <key>scope</key>
-                <string>source.scss entity.other.attribute-name.placeholder.scss, source.scss entity.other.attribute-name.placeholder.scss  punctuation.definition.entity.scss, source.sass entity.other.attribute-name.placeholder.sass, source.sass entity.other.attribute-name.placeholder.sass  punctuation.definition.entity.sass,entity.other.attribute-name.placeholder.scss</string>
+                <string>source.scss entity.other.attribute-name.placeholder.scss, source.scss entity.other.attribute-name.placeholder.scss  punctuation.definition.entity.scss, source.sass entity.other.attribute-name.placeholder.sass, source.sass entity.other.attribute-name.placeholder.sass  punctuation.definition.entity.sass, entity.other.attribute-name.placeholder.scss</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
@@ -657,7 +661,7 @@
                     <key>fontStyle</key>
                     <string></string>
                     <key>foreground</key>
-                    <string>#CC3232</string>
+                    <string>#CD6564</string>
                 </dict>
             </dict>
 
@@ -665,7 +669,7 @@
                 <key>name</key>
                 <string>CSS Numbers</string>
                 <key>scope</key>
-                <string>meta.at-rule.constant.numeric.media, meta.property-list.property-value.constant.numeric,scss.meta.property-list.at-rule.media,property-list.scss.constant.numeric.variable.set,meta.scss.set.variable.constant.numeric.map,scss.meta.set.variable.constant.numeric,scss.meta.at-rule.property-list.constant.numeric.media, constant.numeric.scss</string>
+                <string>meta.at-rule.constant.numeric.media, meta.property-list.property-value.constant.numeric, scss.meta.property-list.at-rule.media, property-list.scss.constant.numeric.variable.set, meta.scss.set.variable.constant.numeric.map, scss.meta.set.variable.constant.numeric, scss.meta.at-rule.property-list.constant.numeric.media, constant.numeric.scss</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
@@ -740,6 +744,7 @@
                     <string>#CC7832</string>
                 </dict>
             </dict>
+      
             <dict>
                 <key>name</key>
                 <string>CSS @media</string>
@@ -900,7 +905,7 @@
                 <key>name</key>
                 <string>PHP booleans</string>
                 <key>scope</key>
-                <string>meta.tag.any.html.string.quoted.double.embedded.line.php.source.constant.language.inline,meta.embedded.line.php.source.constant.language</string>
+                <string>meta.tag.any.html.string.quoted.double.embedded.line.php.source.constant.language.inline, meta.embedded.line.php.source.constant.language</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
@@ -1092,7 +1097,9 @@
                 <key>name</key>
                 <string>Punctuation</string>
                 <key>scope</key>
-                <string>punctuation.definition.string, punctuation.definition.variable, punctuation.definition.string, punctuation.definition.parameters, punctuation.definition.string, punctuation.definition.array, punctuation.separator.key-value, support.constant.mathematical-symbols.scss, support.constant.mathematical-symbols.css, punctuation.section.function,meta.tag.block.any.html.punctuation.definition.begin.string.quoted.double,meta.tag.block.any.html.punctuation.definition.end.string.quoted.double,meta.tag.any.html.punctuation.definition.begin.string.quoted.double.inline,meta.tag.any.html.punctuation.definition.end.string.quoted.double.inline,meta.tag.any.html.punctuation.definition.begin.string.quoted double,meta.tag.any.html.punctuation.definition.end.string.quoted double,ts.block.punctuation,ts.block.brace.array.literal.square,ts.brace.type.square,ts.brace.array.literal.square,ts.punctuation.terminator,ts.punctuation.decorator.objectliteral.object.member.accessor,ts.punctuation.separator.comma.decorator.objectliteral,ts.block.brace.round,scss.meta.at-rule.property-list.media,scss.meta.set.variable.keyword.operator.css,meta.tag.any.html.punctuation.string.quoted.double.embedded.line.php.source.inline.terminator.expression,meta.tag.any.html.string.quoted.double.embedded.line.php.source.inline, meta.punctuation.begin.embedded.line.php.section.source.scope, meta.punctuation.end.embedded.line.php.section.source.scope, entity.scss.meta.property-list.punctuation.other.attribute-name.css.definition.pseudo-class, punctuation.definition.dictionary.end.json, punctuation.definition.dictionary.begin.json, punctuation.separator.dictionary.key-value.json, punctuation.support.type.property-name.begin.json, punctuation.support.type.property-name.end.json, punctuation.separator.dictionary.pair.json</string>
+                <string>
+                    punctuation.definition.string, punctuation.definition.variable, punctuation.definition.string, punctuation.definition.parameters, punctuation.definition.string, punctuation.definition.array, punctuation.separator.key-value, support.constant.mathematical-symbols.scss, support.constant.mathematical-symbols.css, punctuation.section.function, meta.tag.block.any.html.punctuation.definition.begin.string.quoted.double, meta.tag.block.any.html.punctuation.definition.end.string.quoted.double, meta.tag.any.html.punctuation.definition.begin.string.quoted.double.inline, meta.tag.any.html.punctuation.definition.end.string.quoted.double.inline, meta.tag.any.html.punctuation.definition.begin.string.quoted double, meta.tag.any.html.punctuation.definition.end.string.quoted double, ts.block.punctuation, ts.block.brace.array.literal.square, ts.brace.type.square, ts.brace.array.literal.square, ts.punctuation.terminator, ts.punctuation.decorator.objectliteral.object.member.accessor, ts.punctuation.separator.comma.decorator.objectliteral, ts.block.brace.round, scss.meta.at-rule.property-list.media, scss.meta.set.variable.keyword.operator.css, meta.tag.any.html.punctuation.string.quoted.double.embedded.line.php.source.inline.terminator.expression, meta.tag.any.html.string.quoted.double.embedded.line.php.source.inline, meta.punctuation.begin.embedded.line.php.section.source.scope, meta.punctuation.end.embedded.line.php.section.source.scope, entity.scss.meta.property-list.punctuation.other.attribute-name.css.definition.pseudo-class, punctuation.definition.dictionary.end.json, punctuation.definition.dictionary.begin.json, punctuation.separator.dictionary.key-value.json, punctuation.support.type.property-name.begin.json, punctuation.support.type.property-name.end.json, punctuation.separator.dictionary.pair.json, punctuation.definition.block.ts
+                </string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
@@ -1121,6 +1128,7 @@
                     <string>#DD5B5B</string>
                 </dict>
             </dict>
+            
             <!-- JSON -->
             <dict>
                 <key>name</key>
