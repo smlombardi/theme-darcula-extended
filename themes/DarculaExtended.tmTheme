@@ -539,7 +539,7 @@
                 <key>name</key>
                 <string>CSS Class Selector Punctuation</string>
                 <key>scope</key>
-                <string>entity.scss.meta.property-list.punctuation.other.attribute-name.class.css.definition, entity.punctuation.other.attribute-name.class.css.definition, punctuation.definition.entity.css</string>
+                <string>entity.scss.meta.property-list.punctuation.other.attribute-name.class.css.definition, entity.punctuation.other.attribute-name.class.css.definition, punctuation.definition.entity.css, meta.selector.css</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
@@ -550,7 +550,7 @@
                 <key>name</key>
                 <string>CSS Tag Selector</string>
                 <key>scope</key>
-                <string>entity.meta.property-list.scss.name.tag,entity.meta.property-list.css.name.tag,entity.name.tag.scss</string>
+                <string>entity.name.tag.scss, entity.name.tag.css</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
@@ -652,22 +652,11 @@
                 <key>name</key>
                 <string>CSS units</string>
                 <key>scope</key>
-                <string>meta.keyword.other.property-list.property-value.unit, meta.at-rule.keyword.other.unit.media,property-list.scss.set.variable.keyword.unit,other.meta.scss.set.variable.keyword.unit.map, scss.meta.set.variable.keyword.other.unit, scss.meta.at-rule.keyword.property-list.other.unit.media, meta.scss.keyword.other.unit.property-list.property-value, keyword.other.unit.scss, keyword.other.unit.css, keyword.other.unit.scss</string>
+                <string>meta.at-rule.keyword.other.unit.media, property-list.scss.set.variable.keyword.unit, other.meta.scss.set.variable.keyword.unit.map, scss.meta.set.variable.keyword.other.unit, scss.meta.at-rule.keyword.property-list.other.unit.media, meta.scss.keyword.other.unit.property-list.property-value, keyword.other.unit.scss, keyword.other.unit.css, keyword.other.unit.scss</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
                     <string>#a4c35b</string>
-                </dict>
-            </dict>
-            <dict>
-                <key>name</key>
-                <string>CSS @include</string>
-                <key>scope</key>
-                <string>meta.property-list.at-rule.keyword.control.include</string>
-                <key>settings</key>
-                <dict>
-                    <key>foreground</key>
-                    <string>#CC7832</string>
                 </dict>
             </dict>
 
@@ -675,7 +664,8 @@
                 <key>name</key>
                 <string>CSS Pseudo</string>
                 <key>scope</key>
-                <string>entity.property-list.other.attribute-name.pseudo-element.css, entity.other.attribute-name.property-list.css.pseudo-class, entity.other.attribute-name.css.pseudo-class, entity.other.attribute-name.pseudo-class.css, entity.other.attribute-name.pseudo-element.css</string>
+                <string>entity.property-list.other.attribute-name.pseudo-element.css,
+                  entity.property-list.other.attribute-name.pseudo-class.css, entity.other.attribute-name.pseudo-class.css, entity.other.attribute-name.pseudo-element.css</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
@@ -719,7 +709,7 @@
                 <key>name</key>
                 <string>CSS @import</string>
                 <key>scope</key>
-                <string>keyword.control.at-rule.import.scss</string>
+                <string>keyword.control.at-rule.import</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
@@ -730,18 +720,18 @@
                 <key>name</key>
                 <string>CSS @media</string>
                 <key>scope</key>
-                <string>keyword.control.at-rule.media.scss</string>
+                <string>keyword.control.at-rule.media</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
-                    <string>#CC7832</string>
+                    <string>#A48BBD</string>
                 </dict>
             </dict>
             <dict>
                 <key>name</key>
                 <string>CSS @media attribute</string>
                 <key>scope</key>
-                <string>support.type.property-name.media.css</string>
+                <string>support.type.property-name.media</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
@@ -774,7 +764,18 @@
                 <key>name</key>
                 <string>SCSS @Rule Include</string>
                 <key>scope</key>
-                <string>keyword.control.at-rule.include.scss</string>
+                <string>keyword.control.at-rule.include</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#6D9CBE</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>SCSS @Rule FontFace</string>
+                <key>scope</key>
+                <string>keyword.control.at-rule.font-face</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
@@ -1089,7 +1090,7 @@
                 <key>name</key>
                 <string>Logical Operator</string>
                 <key>scope</key>
-                <string>meta.js.function.block.object.keyword.operator.objectliteral.member.logical</string>
+                <string>meta.js.function.block.object.keyword.operator.objectliteral.member.logical, keyword.operator.logical.scss</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
