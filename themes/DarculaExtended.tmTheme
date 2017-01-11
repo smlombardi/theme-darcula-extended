@@ -6,7 +6,7 @@
         <key>name</key>
         <string>Darcula Extended</string>
         <key>semanticClass</key>
-        <string>tesla.dark</string>
+        <string>darcula.extended</string>
         <key>colorSpaceName</key>
         <string>sRGB</string>
         <key>gutterSettings</key>
@@ -45,11 +45,11 @@
                 <key>name</key>
                 <string>Text</string>
                 <key>scope</key>
-                <string>variable.parameter.function</string>
+                <string>variable.parameter.function, text.html.basic</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
-                    <string>#A4A8B0</string>
+                    <string>#eaeaea</string>
                 </dict>
             </dict>
             <dict>
@@ -188,6 +188,17 @@
             </dict>
             <dict>
                 <key>name</key>
+                <string>Keyword Operator Expression TypeOf</string>
+                <key>scope</key>
+                <string>keyword.operator.expression.typeof.js</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#ce7827</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
                 <string>Storage</string>
                 <key>scope</key>
                 <string>storage, ts.class.storage.modifier.declaration.method.parameters</string>
@@ -220,20 +231,20 @@
                     <key>background</key>
                     <string></string>
                     <key>foreground</key>
-                    <string>#82A66D</string>
+                    <string>#6b8657</string>
                 </dict>
             </dict>
             <dict>
                 <key>name</key>
                 <string>Support</string>
                 <key>scope</key>
-                <string>support.function, support.constant, support.type, support.class</string>
+                <string>support.constant, support.type, support.class</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
                     <string>#C7AF3F</string>
                 </dict>
-            </dict>            
+            </dict>
             <dict>
                 <key>name</key>
                 <string>Support Console</string>
@@ -276,10 +287,9 @@
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
-                    <string>#a9b7c7</string>
+                    <string>#A6B090</string>
                 </dict>
             </dict>
- 
             <dict>
                 <key>name</key>
                 <string>Variable Parameter</string>
@@ -288,7 +298,7 @@
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
-                    <string>#9975ab</string>
+                    <string>#A98AAB</string>
                 </dict>
             </dict>
             <dict>
@@ -301,12 +311,15 @@
                     <key>foreground</key>
                     <string>#759F9E</string>
                 </dict>
-            </dict>            
+            </dict>
             <dict>
                 <key>name</key>
                 <string>Literal Key</string>
                 <key>scope</key>
-                <string>meta.object-literal.key, meta.object.member.object-literal.key
+                <string>
+                    meta.object-literal.key, 
+                    meta.object.member.object-literal.key, 
+                    meta.object-literal.key.js entity.name.function.js
                 </string>
                 <key>settings</key>
                 <dict>
@@ -337,13 +350,13 @@
                 </dict>
             </dict>
 
+
             <!-- typescript -->
-          
             <dict>
                 <key>name</key>
                 <string>ts keyword control</string>
                 <key>scope</key>
-                <string>keyword.control.export.ts</string>
+                <string>keyword.control.export.ts, keyword.control.flow.ts</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
@@ -354,7 +367,7 @@
                 <key>name</key>
                 <string>ts entity name type</string>
                 <key>scope</key>
-                <string>entity.name.type.class.ts</string>
+                <string>entity.name.type.ts</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
@@ -365,11 +378,11 @@
                 <key>name</key>
                 <string>ts storage modifier</string>
                 <key>scope</key>
-                <string>class.storage.modifier.ts</string>
+                <string>storage.modifier.ts</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
-                    <string>#9975ab</string>
+                    <string>#AB6767</string>
                 </dict>
             </dict>
             <dict>
@@ -387,7 +400,10 @@
                 <key>name</key>
                 <string>ts return</string>
                 <key>scope</key>
-                <string>support.type.class.declaration.method.return.primitive.ts, type.annotation.support.class.declaration.method.parameters.primitive.ts</string>
+                <string>
+                    support.type.class.declaration.method.return.primitive.ts, 
+                    type.annotation.support.class.declaration.method.parameters.primitive.ts
+                </string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
@@ -396,13 +412,13 @@
             </dict>
             <dict>
                 <key>name</key>
-                <string>ts block variable</string>
+                <string>TS This</string>
                 <key>scope</key>
-                <string>block.variable.class.declaration.method.language.this.ts</string>
+                <string>variable.language.this.ts</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
-                    <string>#ce7827</string>
+                    <string>#BEC7A9</string>
                 </dict>
             </dict>
             <dict>
@@ -503,54 +519,6 @@
                     <string>#a9b7c7</string>
                 </dict>
             </dict>
-
-
-            <!-- html -->
-            <dict>
-                <key>name</key>
-                <string>Tags</string>
-                <key>scope</key>
-                <string>entity.name.tag, punctuation.definition.tag, keyword.control.html.elements, entity.name.tag.inline.any.html, entity.name.tag.block.any.html</string>
-                <key>settings</key>
-                <dict>
-                    <key>foreground</key>
-                    <string>#E8BF6A</string>
-                </dict>
-            </dict>
-            <dict>
-                <key>name</key>
-                <string>Attributes</string>
-                <key>scope</key>
-                <string>meta.tag.any.html.entity.other.attribute-name, meta.tag.html.entity.other.attribute-name, meta.tag.xml.entity.localname.other.attribute-name, meta.tag.xml.entity.other.attribute-name.namespace, html.entity.other.attribute-name.source.js.embedded, entity.other.attribute-name.html</string>
-                <key>settings</key>
-                <dict>
-                    <key>foreground</key>
-                    <string>#BABABA</string>
-                </dict>
-            </dict>
-            <dict>
-                <key>name</key>
-                <string>Attribute Values</string>
-                <key>scope</key>
-                <string>string.quoted.double.html, meta.template string.quoted.double</string>
-                <key>settings</key>
-                <dict>
-                    <key>foreground</key>
-                    <string>#A5C261</string>
-                </dict>
-            </dict>
-            <dict>
-                <key>name</key>
-                <string>Attribute IDs</string>
-                <key>scope</key>
-                <string>entity.other.attribute-name.id</string>
-                <key>settings</key>
-                <dict>
-                    <key>foreground</key>
-                    <string>#8AB8A2</string>
-                </dict>
-            </dict>
-
             <!-- css -->
             <dict>
                 <key>name</key>
@@ -664,7 +632,6 @@
                     <string>#CD6564</string>
                 </dict>
             </dict>
-
             <dict>
                 <key>name</key>
                 <string>CSS Numbers</string>
@@ -687,7 +654,6 @@
                     <string>#a4c35b</string>
                 </dict>
             </dict>
-
             <dict>
                 <key>name</key>
                 <string>CSS Pseudo</string>
@@ -744,7 +710,6 @@
                     <string>#CC7832</string>
                 </dict>
             </dict>
-      
             <dict>
                 <key>name</key>
                 <string>CSS @media</string>
@@ -788,7 +753,7 @@
                     <key>foreground</key>
                     <string>#6D9CBE</string>
                 </dict>
-            </dict>            
+            </dict>
             <dict>
                 <key>name</key>
                 <string>SCSS @Rule Include</string>
@@ -844,7 +809,6 @@
                     <string>#A5C261</string>
                 </dict>
             </dict>
-
             <!-- php -->
             <dict>
                 <key>name</key>
@@ -1098,7 +1062,21 @@
                 <string>Punctuation</string>
                 <key>scope</key>
                 <string>
-                    punctuation.definition.string, punctuation.definition.variable, punctuation.definition.string, punctuation.definition.parameters, punctuation.definition.string, punctuation.definition.array, punctuation.separator.key-value, support.constant.mathematical-symbols.scss, support.constant.mathematical-symbols.css, punctuation.section.function, meta.tag.block.any.html.punctuation.definition.begin.string.quoted.double, meta.tag.block.any.html.punctuation.definition.end.string.quoted.double, meta.tag.any.html.punctuation.definition.begin.string.quoted.double.inline, meta.tag.any.html.punctuation.definition.end.string.quoted.double.inline, meta.tag.any.html.punctuation.definition.begin.string.quoted double, meta.tag.any.html.punctuation.definition.end.string.quoted double, ts.block.punctuation, ts.block.brace.array.literal.square, ts.brace.type.square, ts.brace.array.literal.square, ts.punctuation.terminator, ts.punctuation.decorator.objectliteral.object.member.accessor, ts.punctuation.separator.comma.decorator.objectliteral, ts.block.brace.round, scss.meta.at-rule.property-list.media, scss.meta.set.variable.keyword.operator.css, meta.tag.any.html.punctuation.string.quoted.double.embedded.line.php.source.inline.terminator.expression, meta.tag.any.html.string.quoted.double.embedded.line.php.source.inline, meta.punctuation.begin.embedded.line.php.section.source.scope, meta.punctuation.end.embedded.line.php.section.source.scope, entity.scss.meta.property-list.punctuation.other.attribute-name.css.definition.pseudo-class, punctuation.definition.dictionary.end.json, punctuation.definition.dictionary.begin.json, punctuation.separator.dictionary.key-value.json, punctuation.support.type.property-name.begin.json, punctuation.support.type.property-name.end.json, punctuation.separator.dictionary.pair.json, punctuation.definition.block.ts
+                    punctuation.definition, 
+                    punctuation.section.function, 
+                    punctuation.separator,
+                    punctuation.support.type.property-name, 
+                    punctuation.accessor.ts,
+                    meta.brace.round,
+                    meta.brace.square,
+                    meta.type.annotation.ts,
+                    support.constant.mathematical-symbols, 
+                    block.brace.array.literal.square, 
+                    block.brace.round, 
+                    block.punctuation, 
+                    brace.array.literal.square, 
+                    brace.type.square, 
+                    punctuation.decorator.objectliteral.object.member.accessor, 
                 </string>
                 <key>settings</key>
                 <dict>
@@ -1110,7 +1088,7 @@
                 <key>name</key>
                 <string>Terminator</string>
                 <key>scope</key>
-                <string>punctuation.terminator.rule</string>
+                <string>punctuation.terminator</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
@@ -1128,7 +1106,6 @@
                     <string>#DD5B5B</string>
                 </dict>
             </dict>
-            
             <!-- JSON -->
             <dict>
                 <key>name</key>
@@ -1172,6 +1149,51 @@
                 <dict>
                     <key>foreground</key>
                     <string>#6897BB</string>
+                </dict>
+            </dict>
+            <!-- html -->
+            <dict>
+                <key>name</key>
+                <string>Tags</string>
+                <key>scope</key>
+                <string>entity.name.tag, punctuation.definition.tag, keyword.control.html.elements, entity.name.tag.inline.any.html, entity.name.tag.block.any.html</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#E8BF6A</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Attributes</string>
+                <key>scope</key>
+                <string>meta.tag.any.html entity.other.attribute-name.html, meta.tag.block.any.html entity.other.attribute-name.html, meta.tag.inline.any.html entity.other.attribute-name.html</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#cacaca</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Attribute Values</string>
+                <key>scope</key>
+                <string>string.quoted.double.html, meta.template string.quoted.double</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#A5C261</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Attribute IDs</string>
+                <key>scope</key>
+                <string>entity.other.attribute-name.id</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#8AB8A2</string>
                 </dict>
             </dict>
         </array>
