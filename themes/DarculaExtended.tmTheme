@@ -703,7 +703,7 @@
                 <key>name</key>
                 <string>CSS @import</string>
                 <key>scope</key>
-                <string>keyword.control.at-rule.import</string>
+                <string>keyword.control.at-rule.import, keyword.control.at-rule.import punctuation.definition</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
@@ -714,7 +714,7 @@
                 <key>name</key>
                 <string>CSS @media</string>
                 <key>scope</key>
-                <string>keyword.control.at-rule.media</string>
+                <string>keyword.control.at-rule.media, keyword.control.at-rule.media punctuation.definition</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
@@ -747,7 +747,7 @@
                 <key>name</key>
                 <string>SCSS @Rule Mixin</string>
                 <key>scope</key>
-                <string>keyword.control.at-rule.mixin.scss</string>
+                <string>keyword.control.at-rule.mixin.scss, keyword.control.at-rule.mixin.scss punctuation.definition</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
@@ -758,7 +758,7 @@
                 <key>name</key>
                 <string>SCSS @Rule Include</string>
                 <key>scope</key>
-                <string>keyword.control.at-rule.include</string>
+                <string>keyword.control.at-rule.include, keyword.control.at-rule.include punctuation.definition</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
@@ -769,7 +769,7 @@
                 <key>name</key>
                 <string>SCSS @Rule FontFace</string>
                 <key>scope</key>
-                <string>keyword.control.at-rule.font-face</string>
+                <string>keyword.control.at-rule.font-face, keyword.control.at-rule.font-face punctuation.definition</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
@@ -780,7 +780,7 @@
                 <key>name</key>
                 <string>SCSS @Rule Content</string>
                 <key>scope</key>
-                <string>keyword.control.content.scss</string>
+                <string>keyword.control.content.scss, keyword.control.content.scss punctuation.definition</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
