@@ -128,7 +128,7 @@
 			<key>name</key>
 			<string>Functions</string>
 			<key>scope</key>
-			<string>entity.name.function, meta.require, support.function.any-method, support.function,meta.tag.any.html.string.quoted.double.embedded.line.php.source.inline.support.function.construct.output</string>
+			<string>entity.name.function, meta.require, support.function.any-method, support.function</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -140,7 +140,7 @@
 			<key>name</key>
 			<string>Function Call</string>
 			<key>scope</key>
-			<string>meta.function-call,meta.tag.any.html.string.quoted.double.embedded.line.php.source.function-call.inline</string>
+			<string>meta.function-call</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -225,7 +225,7 @@
 			<key>name</key>
 			<string>Strings, Inherited Class</string>
 			<key>scope</key>
-			<string>string, constant.other.symbol, entity.other.inherited-class, constant.character.escape, constant.character.escape.scss, constant.character.escape.css,invalid.illegal.bad-ampersand.html,ts.block.string.quoted.single,scss.meta.set.variable.string.quoted.single,meta.string.quoted.embedded.line.php.source.single.string-contents,meta.tag.any.html.string.quoted.double.embedded.line.php.source.single.string-contents.inline, string.quoted.single.js</string>
+			<string>string, constant.other.symbol, entity.other.inherited-class, constant.character.escape, constant.character.escape.scss, constant.character.escape.css, invalid.illegal.bad-ampersand.html, ts.block.string.quoted.single, scss.meta.set.variable.string.quoted.single, meta.string.quoted.embedded.line.php.source.single.string-contents, string.quoted.single.js, string.quoted.double.json</string>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
@@ -251,7 +251,7 @@
 			<key>name</key>
 			<string>Variables</string>
 			<key>scope</key>
-			<string>variable,embedded.block.php.punctuation.source.definition.other.variable,meta.punctuation.definition.other.embedded.line.php.source.variable,meta.tag.any.html.other.string.quoted.double.embedded.line.php.source.variable.inline</string>
+			<string>variable, punctuation.definition.variable.php, variable.other.php</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -606,7 +606,7 @@
             <key>name</key>
             <string>CSS colors</string>
             <key>scope</key>
-            <string>support.constant.named-color, meta.property-value constant, keyword.other.unit, constant.other.color.rgb-value, constant.other.rgb-value.css, constant.other.color, constant.numeric.color.hex-value.scss</string>
+            <string>support.constant.named-color, meta.property-value constant, keyword.other.unit, constant.other.color.rgb-value, constant.other.rgb-value.css, constant.other.color, constant.numeric.color.hex-value.scss, constant.numeric.color.hex-value.scss punctuation.definition.constant.scss</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
@@ -619,7 +619,7 @@
 			<key>name</key>
 			<string>CSS/Sass constructor</string>
 			<key>scope</key>
-			<string>meta.constructor.argument.css,meta.constructor.argument.sass</string>
+			<string>meta.constructor.argument.css, meta.constructor.argument.sass</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -777,34 +777,34 @@
 			</dict>
 		</dict>
 
+    <dict>
+        <key>name</key>
+        <string>SCSS Function</string>
+        <key>scope</key>
+        <string>support.function.misc.scss, keyword.control.at-rule.function.scss</string>
+        <key>settings</key>
         <dict>
-            <key>name</key>
-            <string>SCSS Function</string>
-            <key>scope</key>
-            <string>support.function.misc.scss, keyword.control.at-rule.function.scss</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#E8BF6A</string>
-            </dict>
+            <key>foreground</key>
+            <string>#E8BF6A</string>
         </dict>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>SCSS Mixin</string>
+        <key>scope</key>
+        <string>keyword.control.at-rule.mixin.scss, keyword.control.at-rule.include.scss</string>
+        <key>settings</key>
         <dict>
-            <key>name</key>
-            <string>SCSS Mixin</string>
-            <key>scope</key>
-            <string>keyword.control.at-rule.mixin.scss</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#D0D0FF</string>
-            </dict>
+            <key>foreground</key>
+            <string>#D0D0FF</string>
         </dict>
+    </dict>
 
-        <dict>
+    <dict>
 			<key>name</key>
 			<string>Sass Variable</string>
 			<key>scope</key>
-			<string>source.scss meta.set.variable variable, variable.scss,meta.property-list.scss.variable.at-rule.media, variable.scss</string>
+			<string>variable.scss</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -833,37 +833,24 @@
 			<key>name</key>
 			<string>PHP delimiters</string>
 			<key>scope</key>
-			<string>punctuation.section.embedded.begin.php, punctuation.section.embedded.end.php,meta.tag.any.html.punctuation.begin.string.quoted.double.embedded.line.php.section.metatag.inline,meta.tag.any.html.punctuation.end.string.quoted.double.embedded.line.php.section.metatag.inline</string>
+			<string>punctuation.section.embedded.begin.php, punctuation.section.embedded.end.php, punctuation.section.embedded.begin.metatag.php, punctuation.section.embedded.end.metatag.php</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
 				<string>#CC7832</string>
 			</dict>
 		</dict>
-
-		<dict>
-			<key>name</key>
-			<string>JSON</string>
-			<key>scope</key>
-			<string>meta.structure.dictionary.json string.quoted.double.json</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#CFCFC2</string>
-			</dict>
-		</dict>
-
-        <dict>
-            <key>name</key>
-            <string>Regular Expressions</string>
-            <key>scope</key>
-            <string>string.regexp</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#96b5b4</string>
-            </dict>
-        </dict>
+    <dict>
+      <key>name</key>
+      <string>Regular Expressions</string>
+      <key>scope</key>
+      <string>string.regexp</string>
+      <key>settings</key>
+      <dict>
+          <key>foreground</key>
+          <string>#96b5b4</string>
+      </dict>
+    </dict>
 		<dict>
 			<key>name</key>
 			<string>PHPdoc Comments</string>
@@ -886,18 +873,18 @@
 				<string>#96b5b4</string>
 			</dict>
 		</dict>
+    <dict>
+        <key>name</key>
+        <string>Embedded</string>
+        <key>scope</key>
+        <string>punctuation.section.embedded, variable.interpolation</string>
+        <key>settings</key>
         <dict>
-            <key>name</key>
-            <string>Embedded</string>
-            <key>scope</key>
-            <string>punctuation.section.embedded, variable.interpolation</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#9975ab</string>
-            </dict>
+            <key>foreground</key>
+            <string>#9975ab</string>
         </dict>
-        <dict>
+    </dict>
+    <dict>
 			<key>name</key>
 			<string>PHP booleans</string>
 			<key>scope</key>
@@ -905,14 +892,14 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#CC7832</string>
+				<string>#AB6767</string>
 			</dict>
 		</dict>        
 		<dict>
 			<key>name</key>
 			<string>PHP Numbers</string>
 			<key>scope</key>
-			<string>meta.embedded.php.source.line.constant.numeric</string>
+			<string>constant.numeric.php</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -923,7 +910,7 @@
 			<key>name</key>
 			<string>PHP Line Terminator</string>
 			<key>scope</key>
-			<string>meta.embedded.php.punctuation.source.terminator.expression.line</string>
+			<string>punctuation.terminator.expression.php</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -934,11 +921,11 @@
 			<key>name</key>
 			<string>PHP Control Keywords</string>
 			<key>scope</key>
-			<string>meta.embedded.php.source.line.keyword.control, meta.embedded.block.php.source.keyword.control</string>
+			<string>keyword.control.php</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#CC7832</string>
+				<string>#AB6767</string>
 			</dict>
 		</dict>
 
@@ -1102,7 +1089,7 @@
 			<key>name</key>
 			<string>Punctuation</string>
 			<key>scope</key>
-			<string>punctuation.definition.string, punctuation.definition.variable, punctuation.definition.string, punctuation.definition.parameters, punctuation.definition.string, punctuation.definition.array, punctuation.separator.key-value, support.constant.mathematical-symbols.scss, support.constant.mathematical-symbols.css, punctuation.section.function,meta.tag.block.any.html.punctuation.definition.begin.string.quoted.double,meta.tag.block.any.html.punctuation.definition.end.string.quoted.double,meta.tag.any.html.punctuation.definition.begin.string.quoted.double.inline,meta.tag.any.html.punctuation.definition.end.string.quoted.double.inline,meta.tag.any.html.punctuation.definition.begin.string.quoted double,meta.tag.any.html.punctuation.definition.end.string.quoted double,ts.block.punctuation,ts.block.brace.array.literal.square,ts.brace.type.square,ts.brace.array.literal.square,ts.punctuation.terminator,ts.punctuation.decorator.objectliteral.object.member.accessor,ts.punctuation.separator.comma.decorator.objectliteral,ts.block.brace.round,scss.meta.at-rule.property-list.media,scss.meta.set.variable.keyword.operator.css,meta.tag.any.html.punctuation.string.quoted.double.embedded.line.php.source.inline.terminator.expression,meta.tag.any.html.string.quoted.double.embedded.line.php.source.inline, meta.punctuation.begin.embedded.line.php.section.source.scope, meta.punctuation.end.embedded.line.php.section.source.scope, entity.scss.meta.property-list.punctuation.other.attribute-name.css.definition.pseudo-class, meta.js.function.punctuation.block.object.separator.array.literal.objectliteral.member.object-literal.key.key-value, meta.js.function.punctuation.definition.block, meta.brace.js.function.block.object.array.literal.square.objectliteral.member, meta.brace.js.function.block.array.literal.square</string>
+			<string>punctuation.definition, punctuation.definition.string, punctuation.definition.variable, punctuation.definition.string, punctuation.definition.parameters, punctuation.definition.string, punctuation.definition.array, punctuation.separator.key-value, support.constant.mathematical-symbols.scss, support.constant.mathematical-symbols.css, punctuation.section.function,meta.tag.block.any.html.punctuation.definition.begin.string.quoted.double,meta.tag.block.any.html.punctuation.definition.end.string.quoted.double,meta.tag.any.html.punctuation.definition.begin.string.quoted.double.inline,meta.tag.any.html.punctuation.definition.end.string.quoted.double.inline,meta.tag.any.html.punctuation.definition.begin.string.quoted double,meta.tag.any.html.punctuation.definition.end.string.quoted double,ts.block.punctuation,ts.block.brace.array.literal.square,ts.brace.type.square,ts.brace.array.literal.square,ts.punctuation.terminator,ts.punctuation.decorator.objectliteral.object.member.accessor,ts.punctuation.separator.comma.decorator.objectliteral,ts.block.brace.round,scss.meta.at-rule.property-list.media,scss.meta.set.variable.keyword.operator.css,meta.tag.any.html.punctuation.string.quoted.double.embedded.line.php.source.inline.terminator.expression,meta.tag.any.html.string.quoted.double.embedded.line.php.source.inline, meta.punctuation.begin.embedded.line.php.section.source.scope, meta.punctuation.end.embedded.line.php.section.source.scope, entity.scss.meta.property-list.punctuation.other.attribute-name.css.definition.pseudo-class, punctuation.definition.dictionary.end.json, punctuation.definition.dictionary.begin.json, punctuation.separator.dictionary.key-value.json, punctuation.support.type.property-name.begin.json, punctuation.support.type.property-name.end.json, punctuation.separator.dictionary.pair.json</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -1132,12 +1119,12 @@
             </dict>
         </dict>
 
-        		<!-- JSON -->
+    <!-- JSON -->
 		<dict>
 			<key>name</key>
 			<string>Property Name</string>
 			<key>scope</key>
-			<string>meta.structure.array.json.dictionary.support.type.property-name, meta.block.js.string.quoted.double.array.literal.objectliteral.object.member.object-literal.key, meta.structure.dictionary.json.support.type.property-name.value, meta.structure.dictionary.json.support.type.property-name</string>
+			<string>support.type.property-name.json</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -1148,7 +1135,7 @@
 			<key>name</key>
 			<string>Property Value</string>
 			<key>scope</key>
-			<string>meta.structure.array.json.dictionary.value.string.quoted.double, meta.structure.dictionary.json.value.string.quoted.double</string>
+			<string>meta.structure.dictionary.value.json, string.quoted.double.json</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -1159,7 +1146,7 @@
 			<key>name</key>
 			<string>Property Constant</string>
 			<key>scope</key>
-			<string>meta.structure.array.json.dictionary.value.constant.language, meta.structure.dictionary.json.value.constant.language</string>
+			<string>constant.language.json</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -1170,7 +1157,7 @@
 			<key>name</key>
 			<string>Property Numbers</string>
 			<key>scope</key>
-			<string>structure.dictionary.json.value.constant.numeric</string>
+			<string>constant.numeric.json</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
