@@ -692,7 +692,12 @@
                 <key>name</key>
                 <string>SCSS Function</string>
                 <key>scope</key>
-                <string>support.function.misc.scss, keyword.control.at-rule.function.scss, entity.name.function.scss</string>
+                <string>
+                    support.function.misc.scss, 
+                    keyword.control.at-rule.function.scss, 
+                    keyword.control.at-rule.function.scss punctuation.definition, 
+                    entity.name.function.scss
+                </string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
@@ -704,6 +709,24 @@
                 <string>CSS @import</string>
                 <key>scope</key>
                 <string>keyword.control.at-rule.import, keyword.control.at-rule.import punctuation.definition</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#CC7832</string>
+                </dict>
+            </dict>            
+            <dict>
+                <key>name</key>
+                <string>CSS @rule keyword control</string>
+                <key>scope</key>
+                <string>
+                    meta.at-rule.return.scss, 
+                    meta.at-rule.return.scss punctuation.definition,                    
+                    meta.at-rule.else.scss, 
+                    meta.at-rule.else.scss punctuation.definition,
+                    meta.at-rule.if.scss, 
+                    meta.at-rule.if.scss punctuation.definition,
+                </string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
