@@ -218,7 +218,7 @@
                     <key>background</key>
                     <string></string>
                     <key>foreground</key>
-                    <string>#6A8759</string>
+                    <string>#82A66D</string>
                 </dict>
             </dict>
             <dict>
@@ -230,6 +230,28 @@
                 <dict>
                     <key>foreground</key>
                     <string>#C7AF3F</string>
+                </dict>
+            </dict>            
+            <dict>
+                <key>name</key>
+                <string>Support Console</string>
+                <key>scope</key>
+                <string>support.class.console.js</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#FF8843</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Support Function Console</string>
+                <key>scope</key>
+                <string>support.function.console.js</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#FFD24A</string>
                 </dict>
             </dict>
             <dict>
@@ -248,29 +270,19 @@
                 <key>name</key>
                 <string>_this</string>
                 <key>scope</key>
-                <string>meta.js.function.block.variable.other.object, variable.other.readwrite.js, variable.other.object.js</string>
+                <string>variable.other.readwrite.js, variable.other.object.js</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
                     <string>#a9b7c7</string>
                 </dict>
             </dict>
+ 
             <dict>
                 <key>name</key>
-                <string>_this</string>
+                <string>Variable Parameter</string>
                 <key>scope</key>
-                <string>meta.js.function.block.variable.other.var.expr.var-single-variable.readwrite</string>
-                <key>settings</key>
-                <dict>
-                    <key>foreground</key>
-                    <string>#969469</string>
-                </dict>
-            </dict>
-            <dict>
-                <key>name</key>
-                <string>Variable Object Property</string>
-                <key>scope</key>
-                <string>variable.parameter.js, variable.other.object.property.js</string>
+                <string>variable.parameter.js</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
@@ -281,8 +293,19 @@
                 <key>name</key>
                 <string>Variable Object Property</string>
                 <key>scope</key>
-                <string>meta.js.function.block.object.objectliteral.member.object-literal.key.array.literal,meta.js.function.block.object.var.expr.objectliteral.member.object-literal.key,meta.js.function.block.object.objectliteral.member.object-literal.key, variable.other.property.js
-      </string>
+                <string>variable.other.property.js, variable.other.object.property.js</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#9975ab</string>
+                </dict>
+            </dict>            
+            <dict>
+                <key>name</key>
+                <string>Literal Key</string>
+                <key>scope</key>
+                <string>meta.object-literal.key.js
+                </string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
@@ -293,7 +316,7 @@
                 <key>name</key>
                 <string>Function Storage Block</string>
                 <key>scope</key>
-                <string>meta.js.function.storage.type.block, function.storage.type.block.js</string>
+                <string>function.storage.type.block.js</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
@@ -304,13 +327,14 @@
                 <key>name</key>
                 <string>Function Storage Block</string>
                 <key>scope</key>
-                <string>meta.js.function.block.variable.property.support.dom</string>
+                <string>support.function.dom.js</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
                     <string>#9975ab</string>
                 </dict>
             </dict>
+
             <!-- typescript -->
             <dict>
                 <key>name</key>
@@ -1090,7 +1114,7 @@
                 <key>name</key>
                 <string>Logical Operator</string>
                 <key>scope</key>
-                <string>meta.js.function.block.object.keyword.operator.objectliteral.member.logical, keyword.operator.logical.scss</string>
+                <string>keyword.operator.comparison.js, keyword.operator.logical.scss</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
