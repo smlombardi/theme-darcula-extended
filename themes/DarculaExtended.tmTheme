@@ -524,7 +524,11 @@
                 <key>name</key>
                 <string>CSS Class Selector</string>
                 <key>scope</key>
-                <string>meta.selector, entity.other.attribute-name.class.css</string>
+                <string>
+                    meta.selector, 
+                    entity.other.attribute-name.class.css, 
+                    entity.other.attribute-name.parent-selector-suffix.scss
+                </string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
@@ -826,6 +830,17 @@
                 <string>Sass Interpolation</string>
                 <key>scope</key>
                 <string>punctuation.definition.interpolation.begin.bracket.curly.scss, punctuation.definition.interpolation.end.bracket.curly.scss</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#A5C261</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Sass Tag Reference</string>
+                <key>scope</key>
+                <string>entity.name.tag.reference.scss</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
