@@ -802,6 +802,28 @@
                     <key>foreground</key>
                     <string>#6D9CBE</string>
                 </dict>
+            </dict>            
+            <dict>
+                <key>name</key>
+                <string>SCSS @Rule Keyframe</string>
+                <key>scope</key>
+                <string>keyword.control.at-rule.keyframes.scss, keyword.control.at-rule.keyframes.scss punctuation.definition</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#9084BE</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>SCSS Keyframes</string>
+                <key>scope</key>
+                <string>meta.at-rule.keyframes.scss entity.other.attribute-name.scss</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#6897BB</string>
+                </dict>
             </dict>
             <dict>
                 <key>name</key>
@@ -1137,11 +1159,11 @@
                 <key>name</key>
                 <string>Logical Operator</string>
                 <key>scope</key>
-                <string>keyword.operator.comparison.js, keyword.operator.logical.scss</string>
+                <string>keyword.operator.comparison, keyword.operator.logical</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
-                    <string>#DD5B5B</string>
+                    <string>#FCDE68</string>
                 </dict>
             </dict>
             <!-- JSON -->
@@ -1237,6 +1259,20 @@
                 <dict>
                     <key>foreground</key>
                     <string>#8AB8A2</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>JSDOC comments</string>
+                <key>scope</key>
+                <string>
+                    comment.block.documentation.js, 
+                    comment.block.documentation.js punctuation.definition.comment.js
+                </string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#859A90</string>
                 </dict>
             </dict>
         </array>
