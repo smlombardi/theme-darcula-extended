@@ -1163,7 +1163,7 @@
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
-                    <string>#FCDE68</string>
+                    <string>#C0B27D</string>
                 </dict>
             </dict>
             <!-- JSON -->
@@ -1231,7 +1231,8 @@
                     meta.tag.any.html entity.other.attribute-name.html, 
                     meta.tag.block.any.html entity.other.attribute-name.html, 
                     meta.tag.inline.any.html entity.other.attribute-name.html, 
-                    meta.tag.other.html entity.other.attribute-name.html
+                    meta.tag.other.html entity.other.attribute-name.html,
+                    source.js.embedded.html entity.other.attribute-name.html
                 </string>
                 <key>settings</key>
                 <dict>
