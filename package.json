@@ -2,7 +2,7 @@
     "name": "darcula-extended",
     "displayName": "Darcula Extended Theme",
     "description": "A syntax theme for VSCode based on Darcula theme from Jetbrains IDEs",
-    "version": "3.3.1",
+    "version": "3.3.2",
     "publisher": "smlombardi",
     "repository": {
         "type": "git",
